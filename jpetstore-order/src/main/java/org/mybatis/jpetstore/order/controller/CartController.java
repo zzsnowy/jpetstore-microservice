@@ -2,8 +2,8 @@ package org.mybatis.jpetstore.order.controller;
 
 import org.mybatis.jpetstore.order.domain.Cart;
 import org.mybatis.jpetstore.order.domain.CartItem;
-import org.mybatis.jpetstore.order.domain.Item;
-import org.mybatis.jpetstore.order.service.CatalogService;
+import org.mybatis.jpetstore.domain.Item;
+import org.mybatis.jpetstore.service.CatalogService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

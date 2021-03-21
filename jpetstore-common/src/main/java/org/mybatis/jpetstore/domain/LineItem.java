@@ -1,8 +1,7 @@
-package org.mybatis.jpetstore.order.domain;
+package org.mybatis.jpetstore.domain;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import org.mybatis.jpetstore.domain.Item;
 
 // LineItem ： 订单项
 public class LineItem implements Serializable {

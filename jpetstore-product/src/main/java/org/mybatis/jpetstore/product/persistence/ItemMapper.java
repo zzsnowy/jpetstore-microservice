@@ -1,6 +1,6 @@
-package org.mybatis.jpetstore.order.persistence;
+package org.mybatis.jpetstore.product.persistence;
 
-import org.mybatis.jpetstore.domain.Item;
+import org.mybatis.jpetstore.product.domain.Item;
 import java.util.List;
 import java.util.Map;
 

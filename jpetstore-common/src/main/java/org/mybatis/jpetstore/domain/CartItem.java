@@ -1,8 +1,7 @@
-package org.mybatis.jpetstore.order.domain;
+package org.mybatis.jpetstore.domain;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import org.mybatis.jpetstore.domain.Item;
 
 public class CartItem implements Serializable {
  

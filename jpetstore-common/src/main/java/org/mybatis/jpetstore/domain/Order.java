@@ -1,4 +1,4 @@
-package org.mybatis.jpetstore.order.domain;
+package org.mybatis.jpetstore.domain;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -6,7 +6,6 @@ import java.sql.Date;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import org.mybatis.jpetstore.domain.Account;
 
 public class Order implements Serializable {
 
