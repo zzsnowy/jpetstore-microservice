@@ -3,7 +3,7 @@ package org.mybatis.jpetstore.order.controller;
 import org.mybatis.jpetstore.order.domain.Cart;
 import org.mybatis.jpetstore.order.domain.CartItem;
 import org.mybatis.jpetstore.domain.Item;
-import org.mybatis.jpetstore.service.CatalogService;
+import org.mybatis.jpetstore.product.service.CatalogService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,7 +46,7 @@ public class CartController {
                 cart.incrementQuantityByItemId(workingItemId);
             }else{
                 boolean isInStock = catalogService.isItemInStock(workingItemId);
-                Item item = catalogService.getItem(workingItemId);
+                Item item =  catalogService.getItem(workingItemId);
                 cart.addItem(item,isInStock);
                 logger.info("往购物车加商品,商品号："+item.getItemId());
             }

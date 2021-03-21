@@ -21,6 +21,11 @@
     <dependencies>
         <dependency>
             <groupId>org.mybatis.jpetstore</groupId>
+            <artifactId>jpetstore-product</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.jpetstore</groupId>
             <artifactId>jpetstore-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>

@@ -6,7 +6,7 @@
 
     <cache />
 
-    <select id="getItemListByProduct" parameterType="java.lang.String" resultType="org.mybatis.jpetstore.product.domain.Item">
+    <select id="getItemListByProduct" parameterType="java.lang.String" resultType="org.mybatis.jpetstore.domain.Item">
         SELECT
         I.ITEMID,
         LISTPRICE,
@@ -27,7 +27,7 @@
         AND I.PRODUCTID = #{value}
     </select>
 
-    <select id="getItem" parameterType="java.lang.String" resultType="org.mybatis.jpetstore.product.domain.Item">
+    <select id="getItem" parameterType="java.lang.String" resultType="org.mybatis.jpetstore.domain.Item">
         select
         I.ITEMID,
         LISTPRICE,

@@ -3,13 +3,13 @@ package org.mybatis.jpetstore.order.service.impl;
 import org.mybatis.jpetstore.order.domain.Order;
 import org.mybatis.jpetstore.order.domain.Sequence;
 import org.mybatis.jpetstore.domain.Item;
-import org.mybatis.jpetstore.order.persistence.ItemMapper;
-import org.mybatis.jpetstore.persistence.LineItemMapper;
+import org.mybatis.jpetstore.order.persistence.LineItemMapper;
 import org.mybatis.jpetstore.order.persistence.OrderMapper;
 import org.mybatis.jpetstore.order.persistence.SequenceMapper;
 import org.mybatis.jpetstore.order.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.mybatis.jpetstore.product.persistence.ItemMapper;
 
 import java.util.HashMap;
 import java.util.List;

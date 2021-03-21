@@ -2,7 +2,7 @@ package org.mybatis.jpetstore.product.service;
 
 import org.mybatis.jpetstore.product.domain.Category;
 import org.mybatis.jpetstore.product.domain.Product;
-import org.mybatis.jpetstore.product.domain.Item;
+import org.mybatis.jpetstore.domain.Item;
 
 import java.util.List;
 
