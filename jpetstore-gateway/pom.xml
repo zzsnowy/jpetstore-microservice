@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.mybatis.jpetstore</groupId>
-    <artifactId>jpetstore-product</artifactId>
+    <artifactId>jpetstore-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>jpetstore-product</name>
-    <description>宠物商店-产品服务</description>
+    <name>jpetstore-gateway</name>
+    <description>API网关</description>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -26,22 +26,14 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
     </dependencies>
     <dependencyManagement>
@@ -64,6 +56,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>

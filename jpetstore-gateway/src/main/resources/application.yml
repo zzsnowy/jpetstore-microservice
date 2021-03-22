@@ -1,0 +1,23 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+    gateway:
+      routes:
+        - id: test_route
+          uri: https://localhost:7001
+          predicates:
+            - Path=/account/viewLoginForm/**
+
+        - id: qq_route
+          uri: https://www.qq.com
+          predicates:
+            - Query=url,qq
+
+
+  application:
+    name: jpetstore-gateway
+
+
