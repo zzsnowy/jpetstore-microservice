@@ -1,0 +1,341 @@
+2021-03-22 13:43:17.452  INFO 18468 --- [main] o.m.j.p.JpetstoreProductApplication      : No active profile set, falling back to default profiles: default
+2021-03-22 13:43:18.514  INFO 18468 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ef1b0f12-9ff5-3066-96aa-2edbe619d648
+2021-03-22 13:43:18.670  INFO 18468 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-22 13:43:18.701  INFO 18468 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-22 13:43:19.108  INFO 18468 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7002 (http)
+2021-03-22 13:43:19.123  INFO 18468 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-22 13:43:19.123  INFO 18468 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-03-22 13:43:19.420  INFO 18468 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-22 13:43:19.420  INFO 18468 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1937 ms
+2021-03-22 13:43:21.591  WARN 18468 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-22 13:43:21.591  INFO 18468 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-22 13:43:21.607  WARN 18468 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-22 13:43:21.607  INFO 18468 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-22 13:43:21.716  WARN 18468 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultValidator' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NoSuchMethodError: javax.validation.BootstrapConfiguration.getClockProviderClassName()Ljava/lang/String;
+2021-03-22 13:43:21.716  INFO 18468 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-03-22 13:43:21.716 ERROR 18468 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Failed to destroy the filter named [Tomcat WebSocket (JSR356) Filter] of type [org.apache.tomcat.websocket.server.WsFilter]
+
+java.lang.AbstractMethodError: null
+	at org.apache.catalina.core.ApplicationFilterConfig.release(ApplicationFilterConfig.java:301) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardContext.filterStop(StandardContext.java:4565) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5388) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1400) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1389) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_102]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [na:1.8.0_102]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:976) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1400) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1389) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_102]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [na:1.8.0_102]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:976) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:473) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:992) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:469) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:269) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stop(TomcatWebServer.java:324) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.stopAndReleaseWebServer(ServletWebServerApplicationContext.java:306) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.mybatis.jpetstore.product.JpetstoreProductApplication.main(JpetstoreProductApplication.java:26) [classes/:na]
+
+2021-03-22 13:43:21.748  INFO 18468 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-22 13:43:21.763 ERROR 18468 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.hibernate.validator.internal.xml.config.ValidationBootstrapParameters.<init>(ValidationBootstrapParameters.java:63)
+
+The following method did not exist:
+
+    javax.validation.BootstrapConfiguration.getClockProviderClassName()Ljava/lang/String;
+
+The method's class, javax.validation.BootstrapConfiguration, is available from the following locations:
+
+    jar:file:/C:/Users/zhao/.m2/repository/javax/javaee-api/7.0/javaee-api-7.0.jar!/javax/validation/BootstrapConfiguration.class
+    jar:file:/C:/Users/zhao/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.1/jakarta.validation-api-2.0.1.jar!/javax/validation/BootstrapConfiguration.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/zhao/.m2/repository/javax/javaee-api/7.0/javaee-api-7.0.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of javax.validation.BootstrapConfiguration
+
+2021-03-22 13:58:52.807  INFO 17428 --- [main] o.m.j.a.JpetstoreAccountApplication      : No active profile set, falling back to default profiles: default
+2021-03-22 13:58:53.955  INFO 17428 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0b59fbdf-ceab-3c86-a3c1-8a91b2152f4b
+2021-03-22 13:58:54.071  INFO 17428 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-22 13:58:54.106  INFO 17428 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-22 13:58:54.426  INFO 17428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7001 (http)
+2021-03-22 13:58:54.441  INFO 17428 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-22 13:58:54.441  INFO 17428 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-03-22 13:58:54.712  INFO 17428 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-22 13:58:54.712  INFO 17428 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1836 ms
+2021-03-22 13:58:56.635  WARN 17428 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-22 13:58:56.636  INFO 17428 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-22 13:58:56.642  WARN 17428 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-22 13:58:56.642  INFO 17428 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-22 13:58:56.689  WARN 17428 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultValidator' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NoSuchMethodError: javax.validation.BootstrapConfiguration.getClockProviderClassName()Ljava/lang/String;
+2021-03-22 13:58:56.692  INFO 17428 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-03-22 13:58:56.699 ERROR 17428 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Failed to destroy the filter named [Tomcat WebSocket (JSR356) Filter] of type [org.apache.tomcat.websocket.server.WsFilter]
+
+java.lang.AbstractMethodError: null
+	at org.apache.catalina.core.ApplicationFilterConfig.release(ApplicationFilterConfig.java:301) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardContext.filterStop(StandardContext.java:4565) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5388) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1400) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1389) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_102]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [na:1.8.0_102]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:976) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1400) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1389) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_102]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [na:1.8.0_102]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:976) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:473) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:992) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:469) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:269) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stop(TomcatWebServer.java:324) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.stopAndReleaseWebServer(ServletWebServerApplicationContext.java:306) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.mybatis.jpetstore.account.JpetstoreAccountApplication.main(JpetstoreAccountApplication.java:11) [classes/:na]
+
+2021-03-22 13:58:56.702  INFO 17428 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-22 13:58:56.729 ERROR 17428 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.hibernate.validator.internal.xml.config.ValidationBootstrapParameters.<init>(ValidationBootstrapParameters.java:63)
+
+The following method did not exist:
+
+    javax.validation.BootstrapConfiguration.getClockProviderClassName()Ljava/lang/String;
+
+The method's class, javax.validation.BootstrapConfiguration, is available from the following locations:
+
+    jar:file:/C:/Users/zhao/.m2/repository/javax/javaee-api/7.0/javaee-api-7.0.jar!/javax/validation/BootstrapConfiguration.class
+    jar:file:/C:/Users/zhao/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.1/jakarta.validation-api-2.0.1.jar!/javax/validation/BootstrapConfiguration.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/zhao/.m2/repository/javax/javaee-api/7.0/javaee-api-7.0.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of javax.validation.BootstrapConfiguration
+
+2021-03-22 14:08:26.184  INFO 12760 --- [main] o.m.j.a.JpetstoreAccountApplication      : No active profile set, falling back to default profiles: default
+2021-03-22 14:08:27.793  INFO 12760 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0b59fbdf-ceab-3c86-a3c1-8a91b2152f4b
+2021-03-22 14:08:27.951  INFO 12760 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-22 14:08:27.963  INFO 12760 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-22 14:08:28.334  INFO 12760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7001 (http)
+2021-03-22 14:08:28.334  INFO 12760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-22 14:08:28.334  INFO 12760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-03-22 14:08:28.585  INFO 12760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-22 14:08:28.585  INFO 12760 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2351 ms
+2021-03-22 14:08:30.412  WARN 12760 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-22 14:08:30.412  INFO 12760 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-22 14:08:30.412  WARN 12760 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-22 14:08:30.412  INFO 12760 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-22 14:08:30.462  WARN 12760 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultValidator' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NoSuchMethodError: javax.validation.BootstrapConfiguration.getClockProviderClassName()Ljava/lang/String;
+2021-03-22 14:08:30.462  INFO 12760 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-03-22 14:08:30.478 ERROR 12760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Failed to destroy the filter named [Tomcat WebSocket (JSR356) Filter] of type [org.apache.tomcat.websocket.server.WsFilter]
+
+java.lang.AbstractMethodError: null
+	at org.apache.catalina.core.ApplicationFilterConfig.release(ApplicationFilterConfig.java:301) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardContext.filterStop(StandardContext.java:4565) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5388) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1400) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1389) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_102]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [na:1.8.0_102]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:976) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1400) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1389) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_102]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [na:1.8.0_102]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:976) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:473) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:992) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:469) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:269) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stop(TomcatWebServer.java:324) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.stopAndReleaseWebServer(ServletWebServerApplicationContext.java:306) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.mybatis.jpetstore.account.JpetstoreAccountApplication.main(JpetstoreAccountApplication.java:11) [classes/:na]
+
+2021-03-22 14:08:30.496  INFO 12760 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-22 14:08:30.496 ERROR 12760 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.hibernate.validator.internal.xml.config.ValidationBootstrapParameters.<init>(ValidationBootstrapParameters.java:63)
+
+The following method did not exist:
+
+    javax.validation.BootstrapConfiguration.getClockProviderClassName()Ljava/lang/String;
+
+The method's class, javax.validation.BootstrapConfiguration, is available from the following locations:
+
+    jar:file:/C:/Users/zhao/.m2/repository/javax/javaee-api/7.0/javaee-api-7.0.jar!/javax/validation/BootstrapConfiguration.class
+    jar:file:/C:/Users/zhao/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.1/jakarta.validation-api-2.0.1.jar!/javax/validation/BootstrapConfiguration.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/zhao/.m2/repository/javax/javaee-api/7.0/javaee-api-7.0.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of javax.validation.BootstrapConfiguration
+
+2021-03-22 14:09:20.961  INFO 9368 --- [main] o.m.j.a.JpetstoreAccountApplication      : No active profile set, falling back to default profiles: default
+2021-03-22 14:09:21.963  INFO 9368 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0b59fbdf-ceab-3c86-a3c1-8a91b2152f4b
+2021-03-22 14:09:22.092  INFO 9368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-22 14:09:22.098  INFO 9368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-22 14:09:22.450  INFO 9368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7001 (http)
+2021-03-22 14:09:22.476  INFO 9368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-22 14:09:22.477  INFO 9368 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-03-22 14:09:22.722  INFO 9368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-22 14:09:22.722  INFO 9368 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1700 ms
+2021-03-22 14:09:24.928  WARN 9368 --- [main] o.s.c.n.a.ArchaiusAutoConfiguration      : No spring.application.name found, defaulting to 'application'
+2021-03-22 14:09:24.928  WARN 9368 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-22 14:09:24.928  INFO 9368 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-22 14:09:24.946  WARN 9368 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-22 14:09:24.946  INFO 9368 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-22 14:09:24.978  WARN 9368 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultValidator' defined in class path resource [org/springframework/boot/autoconfigure/validation/ValidationAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NoSuchMethodError: javax.validation.BootstrapConfiguration.getClockProviderClassName()Ljava/lang/String;
+2021-03-22 14:09:24.978  INFO 9368 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-03-22 14:09:25.002 ERROR 9368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Failed to destroy the filter named [Tomcat WebSocket (JSR356) Filter] of type [org.apache.tomcat.websocket.server.WsFilter]
+
+java.lang.AbstractMethodError: null
+	at org.apache.catalina.core.ApplicationFilterConfig.release(ApplicationFilterConfig.java:301) ~[tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardContext.filterStop(StandardContext.java:4565) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5388) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1400) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1389) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_102]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [na:1.8.0_102]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:976) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1400) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1389) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_102]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) [na:1.8.0_102]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:976) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:473) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:992) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:469) [tomcat-embed-core-9.0.27.jar:9.0.27]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:269) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stop(TomcatWebServer.java:324) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.stopAndReleaseWebServer(ServletWebServerApplicationContext.java:306) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.0.RELEASE.jar:2.2.0.RELEASE]
+	at org.mybatis.jpetstore.account.JpetstoreAccountApplication.main(JpetstoreAccountApplication.java:11) [classes/:na]
+
+2021-03-22 14:09:25.013  INFO 9368 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-22 14:09:25.029 ERROR 9368 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.hibernate.validator.internal.xml.config.ValidationBootstrapParameters.<init>(ValidationBootstrapParameters.java:63)
+
+The following method did not exist:
+
+    javax.validation.BootstrapConfiguration.getClockProviderClassName()Ljava/lang/String;
+
+The method's class, javax.validation.BootstrapConfiguration, is available from the following locations:
+
+    jar:file:/C:/Users/zhao/.m2/repository/javax/javaee-api/7.0/javaee-api-7.0.jar!/javax/validation/BootstrapConfiguration.class
+    jar:file:/C:/Users/zhao/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.1/jakarta.validation-api-2.0.1.jar!/javax/validation/BootstrapConfiguration.class
+
+It was loaded from the following location:
+
+    file:/C:/Users/zhao/.m2/repository/javax/javaee-api/7.0/javaee-api-7.0.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of javax.validation.BootstrapConfiguration
+
