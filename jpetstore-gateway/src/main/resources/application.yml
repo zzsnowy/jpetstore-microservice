@@ -7,14 +7,16 @@ spring:
     gateway:
       routes:
         - id: test_route
-          uri: https://localhost:7001
+          uri: http://localhost:7001
           predicates:
             - Path=/account/viewLoginForm/**
 
         - id: qq_route
-          uri: https://www.qq.com
+          uri: http://localhost:7002
           predicates:
-            - Query=url,qq
+            - Path=/api/catalog/main
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
 
 
   application:
