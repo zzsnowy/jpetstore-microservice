@@ -698,3 +698,46 @@ Correct the classpath of your application so that it contains a single, compatib
 2021-03-22 21:45:30.111  INFO 2888 --- [http-nio-7002-exec-4] o.m.j.p.controller.CatalogController     : 跳往商品大类,Id:FISH
 2021-03-22 21:45:32.779  INFO 2888 --- [http-nio-7002-exec-6] o.m.j.p.controller.CatalogController     : 跳往商品小类,Id:FI-FW-01
 2021-03-22 21:45:34.546  INFO 2888 --- [http-nio-7002-exec-9] o.m.j.p.controller.CatalogController     : 跳往某一特定商品,Id:EST-4
+2021-03-22 23:25:09.651  INFO 7892 --- [main] o.m.j.p.JpetstoreProductApplication      : No active profile set, falling back to default profiles: default
+2021-03-22 23:25:11.241  INFO 7892 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d73c0bf8-fc52-3c7c-a40f-1a1b0f1d57fa
+2021-03-22 23:25:11.474  INFO 7892 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-22 23:25:11.509  INFO 7892 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-22 23:25:11.996  INFO 7892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7002 (http)
+2021-03-22 23:25:12.022  INFO 7892 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-22 23:25:12.022  INFO 7892 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-03-22 23:25:12.280  INFO 7892 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-22 23:25:12.280  INFO 7892 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2491 ms
+2021-03-22 23:25:14.712  WARN 7892 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-22 23:25:14.712  INFO 7892 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-22 23:25:14.712  WARN 7892 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-22 23:25:14.712  INFO 7892 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-22 23:25:15.071  INFO 7892 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-22 23:25:15.171  INFO 7892 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-03-22 23:25:18.325  INFO 7892 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-03-22 23:25:18.325  INFO 7892 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-03-22 23:25:21.840  INFO 7892 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-03-22 23:25:24.621  INFO 7892 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-03-22 23:25:24.980  INFO 7892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7002 (http) with context path ''
+2021-03-22 23:25:25.275  INFO 7892 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP jpetstore-product 192.168.56.1:7002 register finished
+2021-03-22 23:25:28.044  INFO 7892 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-03-22 23:25:28.044  INFO 7892 --- [main] o.m.j.p.JpetstoreProductApplication      : Started JpetstoreProductApplication in 25.646 seconds (JVM running for 30.647)
+2021-03-22 23:25:37.644  INFO 7892 --- [http-nio-7002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-22 23:25:37.645  INFO 7892 --- [http-nio-7002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-22 23:25:37.654  INFO 7892 --- [http-nio-7002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2021-03-22 23:25:39.381  INFO 7892 --- [http-nio-7002-exec-3] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-22 23:25:41.460  INFO 7892 --- [http-nio-7002-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-22 23:25:41.463  WARN 7892 --- [http-nio-7002-exec-5] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-03-22 23:25:41.848  INFO 7892 --- [http-nio-7002-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-22 23:25:41.981  INFO 7892 --- [http-nio-7002-exec-5] o.m.j.p.controller.CatalogController     : 跳往商品大类,Id:FISH
+2021-03-22 23:25:56.947  INFO 7892 --- [http-nio-7002-exec-7] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-22 23:28:43.290  INFO 7892 --- [http-nio-7002-exec-6] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-22 23:28:46.625  INFO 7892 --- [http-nio-7002-exec-8] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-22 23:28:47.304  INFO 7892 --- [http-nio-7002-exec-1] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-22 23:28:47.503  INFO 7892 --- [http-nio-7002-exec-10] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-22 23:29:01.355  INFO 7892 --- [http-nio-7002-exec-2] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-22 23:30:32.754  INFO 7892 --- [http-nio-7002-exec-4] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-22 23:32:48.182  INFO 7892 --- [http-nio-7002-exec-7] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-22 23:32:52.014  INFO 7892 --- [http-nio-7002-exec-10] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-22 23:35:19.963  INFO 7892 --- [http-nio-7002-exec-2] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-22 23:43:44.535  INFO 7892 --- [http-nio-7002-exec-6] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-22 23:43:47.939  INFO 7892 --- [http-nio-7002-exec-1] o.m.j.p.controller.CatalogController     : 到达主页

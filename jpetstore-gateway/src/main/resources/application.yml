@@ -14,9 +14,9 @@ spring:
         - id: qq_route
           uri: http://localhost:7002
           predicates:
-            - Path=/api/catalog/main
-          filters:
-            - RewritePath=/api/(?<segment>.*),/$\{segment}
+            - Path=/catalog/main
+#          filters:
+#            - RewritePath=/api/(?<segment>.*),/$\{segment}
 
 
   application:

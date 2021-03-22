@@ -13,6 +13,7 @@
         <module>jpetstore-order</module>
         <module>jpetstore-product</module>
         <module>jpetstore-common</module>
+        <module>jpetstore-gateway</module>
     </modules>
 
 </project>
