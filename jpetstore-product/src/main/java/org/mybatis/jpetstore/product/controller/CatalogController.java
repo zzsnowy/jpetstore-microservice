@@ -76,7 +76,7 @@ public class CatalogController {
     }
 
     // 搜索商品
-    @PostMapping("/searchProduct")
+    @PostMapping("searchProduct")
     public String searchProduct(@RequestParam("keyword") String keyword,Model model){
 
         if(keyword.trim().equals("")){
@@ -90,15 +90,19 @@ public class CatalogController {
     }
 
     //by zx
-    @GetMapping("/catalog/get/{itemId}")
-    public boolean isItemInStock(@PathVariable("itemId") String itemId){
-        boolean tmp=catalogService.isItemInStock(itemId);
-        return tmp;
+    @RequestMapping("/catalog/get")
+    @ResponseBody
+    public boolean isItemInStock(@RequestParam("itemId") String itemId){
+
+       boolean tmp=catalogService.isItemInStock(itemId);
+        logger.info("****itemId是:"+itemId);
+       return tmp;
     }
-    @GetMapping("/catalog/getso/{itemId}")
-    public Item getItem(@PathVariable("itemId") String itemId){
-        Item item=catalogService.getItem(itemId);
-        return item;
+    @RequestMapping("/catalog/ge")
+    @ResponseBody
+    public Item getItem(@RequestParam("itemId") String itemId){
+
+        return catalogService.getItem(itemId);
     }
 
 }

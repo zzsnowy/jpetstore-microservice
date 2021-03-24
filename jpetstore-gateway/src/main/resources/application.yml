@@ -19,7 +19,7 @@ spring:
         - id: o_route
           uri: lb://jpetstore-order
           predicates:
-            - Path=/cart/**
+            - Path=/cart/**,/order/**
 
 
 

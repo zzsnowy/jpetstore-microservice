@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
-
+@EnableFeignClients(basePackages="org.mybatis.jpetstore.order.feign")
 @EnableDiscoveryClient
 @SpringBootApplication
 @MapperScan("org.mybatis.jpetstore.order.persistence")

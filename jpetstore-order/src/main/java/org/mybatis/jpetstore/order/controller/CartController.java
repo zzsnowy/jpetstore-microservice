@@ -28,10 +28,10 @@ public class CartController {
     //日志
     private final Logger logger = LoggerFactory.getLogger(CartController.class);
 
-    @Autowired
-    private CatalogService catalogService;
-//    @Resource
-//    public CatalogFeignService catalogFeignService;
+//    @Autowired
+//    private CatalogService catalogService;
+    @Resource
+    public CatalogFeignService catalogFeignService;
 
     // 往购物车加商品
     @GetMapping("/cart/cart")
@@ -48,8 +48,8 @@ public class CartController {
             if(cart.containsItemId(workingItemId)){
                 cart.incrementQuantityByItemId(workingItemId);
             }else{
-                boolean isInStock = catalogService.isItemInStock(workingItemId);
-                Item item =  catalogService.getItem(workingItemId);
+                boolean isInStock = catalogFeignService.isItemInStock(workingItemId);
+                Item item =  catalogFeignService.getItem(workingItemId);
                 cart.addItem(item,isInStock);
                 logger.info("往购物车加商品,商品号："+item.getItemId());
             }
