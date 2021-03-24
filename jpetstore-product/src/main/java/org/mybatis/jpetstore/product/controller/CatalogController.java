@@ -76,7 +76,7 @@ public class CatalogController {
     }
 
     // 搜索商品
-    @PostMapping("searchProduct")
+    @PostMapping("/searchProduct")
     public String searchProduct(@RequestParam("keyword") String keyword,Model model){
 
         if(keyword.trim().equals("")){

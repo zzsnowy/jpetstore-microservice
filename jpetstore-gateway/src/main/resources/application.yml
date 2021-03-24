@@ -9,7 +9,7 @@ spring:
         - id: p_route
           uri: lb://jpetstore-product
           predicates:
-            - Path=/catalog/**
+            - Path=/catalog/**,/searchProduct/**
 #          filters:
 #            - RewritePath=/product/(?<segment>.*),/$\{segment}
         - id: a_route
