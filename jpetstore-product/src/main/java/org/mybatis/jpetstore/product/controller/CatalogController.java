@@ -89,5 +89,16 @@ public class CatalogController {
         return "catalog/searchProduct";
     }
 
+    //by zx
+    @GetMapping("/catalog/get/{itemId}")
+    public boolean isItemInStock(@PathVariable("itemId") String itemId){
+        boolean tmp=catalogService.isItemInStock(itemId);
+        return tmp;
+    }
+    @GetMapping("/catalog/getso/{itemId}")
+    public Item getItem(@PathVariable("itemId") String itemId){
+        Item item=catalogService.getItem(itemId);
+        return item;
+    }
 
 }

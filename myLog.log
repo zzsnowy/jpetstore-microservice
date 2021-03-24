@@ -847,3 +847,53 @@ Correct the classpath of your application so that it contains a single, compatib
 2021-03-24 15:40:39.038  INFO 6900 --- [http-nio-7002-exec-1] o.m.j.p.controller.CatalogController     : 跳往商品小类,Id:RP-LI-02
 2021-03-24 15:40:41.545  INFO 6900 --- [http-nio-7002-exec-2] o.m.j.p.controller.CatalogController     : 跳往商品小类,Id:RP-LI-02
 2021-03-24 15:40:44.510  INFO 6900 --- [http-nio-7002-exec-3] o.m.j.p.controller.CatalogController     : 跳往商品大类,Id:REPTILES
+2021-03-24 17:43:17.518  INFO 8280 --- [main] o.m.j.p.JpetstoreProductApplication      : No active profile set, falling back to default profiles: default
+2021-03-24 17:43:19.286  INFO 8280 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d73c0bf8-fc52-3c7c-a40f-1a1b0f1d57fa
+2021-03-24 17:43:19.466  INFO 8280 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-24 17:43:19.500  INFO 8280 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-24 17:43:20.052  INFO 8280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7002 (http)
+2021-03-24 17:43:20.083  INFO 8280 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-24 17:43:20.083  INFO 8280 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-03-24 17:43:20.525  INFO 8280 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-24 17:43:20.525  INFO 8280 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2909 ms
+2021-03-24 17:43:23.854  WARN 8280 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-24 17:43:23.854  INFO 8280 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-24 17:43:23.869  WARN 8280 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-24 17:43:23.869  INFO 8280 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-24 17:43:24.406  INFO 8280 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-24 17:43:24.829  INFO 8280 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-03-24 17:43:27.317  INFO 8280 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-03-24 17:43:31.949  INFO 8280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7002 (http) with context path ''
+2021-03-24 17:43:32.097  INFO 8280 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP jpetstore-product 192.168.56.1:7002 register finished
+2021-03-24 17:43:33.855  INFO 8280 --- [main] o.m.j.p.JpetstoreProductApplication      : Started JpetstoreProductApplication in 27.547 seconds (JVM running for 32.793)
+2021-03-24 17:50:25.842  INFO 8280 --- [http-nio-7002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-24 17:50:25.843  INFO 8280 --- [http-nio-7002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-24 17:50:25.853  INFO 8280 --- [http-nio-7002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2021-03-24 17:50:25.948  INFO 8280 --- [http-nio-7002-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-24 17:50:25.950  WARN 8280 --- [http-nio-7002-exec-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-03-24 17:50:26.135  INFO 8280 --- [http-nio-7002-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-24 17:50:26.203  INFO 8280 --- [http-nio-7002-exec-1] o.m.j.p.controller.CatalogController     : 跳往商品大类,Id:FISH
+2021-03-24 17:50:28.678  INFO 8280 --- [http-nio-7002-exec-2] o.m.j.p.controller.CatalogController     : 跳往商品小类,Id:FI-FW-01
+2021-03-24 17:50:32.269  INFO 8280 --- [http-nio-7002-exec-3] o.m.j.p.controller.CatalogController     : 跳往商品小类,Id:FI-FW-01
+2021-03-24 17:50:35.776  INFO 8280 --- [http-nio-7002-exec-4] o.m.j.p.controller.CatalogController     : 跳往某一特定商品,Id:EST-5
+2021-03-24 18:00:01.769  INFO 8280 --- [http-nio-7002-exec-6] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-24 18:03:29.189  INFO 8280 --- [http-nio-7002-exec-8] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-24 18:03:30.819  INFO 8280 --- [http-nio-7002-exec-10] o.m.j.p.controller.CatalogController     : 跳往商品大类,Id:FISH
+2021-03-24 18:03:31.791  INFO 8280 --- [http-nio-7002-exec-9] o.m.j.p.controller.CatalogController     : 跳往商品小类,Id:FI-SW-02
+2021-03-24 18:03:34.962  INFO 8280 --- [http-nio-7002-exec-1] o.m.j.p.controller.CatalogController     : 跳往商品小类,Id:FI-SW-02
+2021-03-24 18:04:43.743  INFO 8280 --- [http-nio-7002-exec-3] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-24 18:04:45.839  INFO 8280 --- [http-nio-7002-exec-4] o.m.j.p.controller.CatalogController     : 跳往商品大类,Id:DOGS
+2021-03-24 18:04:47.124  INFO 8280 --- [http-nio-7002-exec-5] o.m.j.p.controller.CatalogController     : 跳往商品小类,Id:K9-RT-01
+2021-03-24 18:04:50.243  INFO 8280 --- [http-nio-7002-exec-6] o.m.j.p.controller.CatalogController     : 跳往商品小类,Id:K9-RT-01
+2021-03-24 18:04:51.359  INFO 8280 --- [http-nio-7002-exec-7] o.m.j.p.controller.CatalogController     : 跳往某一特定商品,Id:EST-28
+2021-03-24 18:21:20.467  INFO 8280 --- [http-nio-7002-exec-10] o.m.j.p.controller.CatalogController     : 跳往商品大类,Id:FISH
+2021-03-24 18:21:21.985  INFO 8280 --- [http-nio-7002-exec-9] o.m.j.p.controller.CatalogController     : 跳往商品小类,Id:FI-FW-02
+2021-03-24 18:21:22.944  INFO 8280 --- [http-nio-7002-exec-1] o.m.j.p.controller.CatalogController     : 跳往某一特定商品,Id:EST-20
+2021-03-24 18:24:55.988  INFO 8280 --- [http-nio-7002-exec-3] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-24 18:25:14.400  INFO 8280 --- [http-nio-7002-exec-4] o.m.j.p.controller.CatalogController     : 跳往商品大类,Id:BIRDS
+2021-03-24 18:25:16.246  INFO 8280 --- [http-nio-7002-exec-5] o.m.j.p.controller.CatalogController     : 跳往商品小类,Id:AV-SB-02
+2021-03-24 19:14:00.120  WARN 8280 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m2s977ms246µs900ns).
+2021-03-24 20:03:42.791  INFO 8280 --- [http-nio-7002-exec-7] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-24 20:03:45.140  INFO 8280 --- [http-nio-7002-exec-8] o.m.j.p.controller.CatalogController     : 跳往商品大类,Id:FISH
+2021-03-24 20:03:46.043  INFO 8280 --- [http-nio-7002-exec-10] o.m.j.p.controller.CatalogController     : 跳往商品小类,Id:FI-SW-01
+2021-03-24 20:03:46.951  INFO 8280 --- [http-nio-7002-exec-9] o.m.j.p.controller.CatalogController     : 跳往某一特定商品,Id:EST-2

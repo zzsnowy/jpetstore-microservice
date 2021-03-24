@@ -3,7 +3,7 @@ package org.mybatis.jpetstore.order.controller;
 import org.mybatis.jpetstore.order.domain.Cart;
 import org.mybatis.jpetstore.order.domain.CartItem;
 import org.mybatis.jpetstore.domain.Item;
-import org.mybatis.jpetstore.product.service.CatalogService;
+import org.mybatis.jpetstore.order.feign.CatalogFeignService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestParam;
 
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
@@ -29,6 +30,8 @@ public class CartController {
 
     @Autowired
     private CatalogService catalogService;
+//    @Resource
+//    public CatalogFeignService catalogFeignService;
 
     // 往购物车加商品
     @GetMapping("/cart/cart")

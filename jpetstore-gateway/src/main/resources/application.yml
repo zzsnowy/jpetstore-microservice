@@ -6,25 +6,22 @@ spring:
 
     gateway:
       routes:
-        - id: qq_route
+        - id: p_route
           uri: lb://jpetstore-product
           predicates:
             - Path=/catalog/**
 #          filters:
 #            - RewritePath=/product/(?<segment>.*),/$\{segment}
-
-
-        - id: test_route
+        - id: a_route
           uri: lb://jpetstore-account
           predicates:
             - Path=/account/**
-#          filters:
-#            - RewritePath=/account/(?<segment>.*),/$\{segment}
+        - id: o_route
+          uri: lb://jpetstore-order
+          predicates:
+            - Path=/cart/**
 
 
-
-#          filters:
-#            - RewritePath=/api/(?<segment>.*),/$\{segment}
 
 
   application:
