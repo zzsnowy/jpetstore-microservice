@@ -741,3 +741,109 @@ Correct the classpath of your application so that it contains a single, compatib
 2021-03-22 23:35:19.963  INFO 7892 --- [http-nio-7002-exec-2] o.m.j.p.controller.CatalogController     : 到达主页
 2021-03-22 23:43:44.535  INFO 7892 --- [http-nio-7002-exec-6] o.m.j.p.controller.CatalogController     : 到达主页
 2021-03-22 23:43:47.939  INFO 7892 --- [http-nio-7002-exec-1] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-24 13:13:34.567  INFO 19648 --- [main] o.m.j.p.JpetstoreProductApplication      : No active profile set, falling back to default profiles: default
+2021-03-24 13:13:35.770  INFO 19648 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d73c0bf8-fc52-3c7c-a40f-1a1b0f1d57fa
+2021-03-24 13:13:36.067  INFO 19648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-24 13:13:36.098  INFO 19648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-24 13:13:36.707  INFO 19648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7002 (http)
+2021-03-24 13:13:36.739  INFO 19648 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-24 13:13:36.739  INFO 19648 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-03-24 13:13:37.161  INFO 19648 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-24 13:13:37.161  INFO 19648 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2562 ms
+2021-03-24 13:13:41.530  WARN 19648 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-24 13:13:41.530  INFO 19648 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-24 13:13:41.536  WARN 19648 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-24 13:13:41.536  INFO 19648 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-24 13:13:41.872  INFO 19648 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-24 13:13:41.993  INFO 19648 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-03-24 13:13:44.576  INFO 19648 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-03-24 13:13:44.587  INFO 19648 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-03-24 13:13:48.790  INFO 19648 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-03-24 13:13:51.670  INFO 19648 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-03-24 13:13:51.973  INFO 19648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7002 (http) with context path ''
+2021-03-24 13:13:52.165  INFO 19648 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP jpetstore-product 192.168.56.1:7002 register finished
+2021-03-24 13:13:54.836  INFO 19648 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-03-24 13:13:54.838  INFO 19648 --- [main] o.m.j.p.JpetstoreProductApplication      : Started JpetstoreProductApplication in 27.808 seconds (JVM running for 33.209)
+2021-03-24 13:14:31.991  INFO 19648 --- [http-nio-7002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-24 13:14:31.991  INFO 19648 --- [http-nio-7002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-24 13:14:31.999  INFO 19648 --- [http-nio-7002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2021-03-24 13:14:32.031  INFO 19648 --- [http-nio-7002-exec-1] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-24 13:20:20.719  INFO 17388 --- [main] o.m.j.p.JpetstoreProductApplication      : No active profile set, falling back to default profiles: default
+2021-03-24 13:20:22.335  INFO 17388 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d73c0bf8-fc52-3c7c-a40f-1a1b0f1d57fa
+2021-03-24 13:20:22.509  INFO 17388 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-24 13:20:22.559  INFO 17388 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-24 13:20:22.977  INFO 17388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7002 (http)
+2021-03-24 13:20:22.993  INFO 17388 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-24 13:20:22.993  INFO 17388 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-03-24 13:20:23.277  INFO 17388 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-24 13:20:23.277  INFO 17388 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2205 ms
+2021-03-24 13:20:26.001  WARN 17388 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-24 13:20:26.002  INFO 17388 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-24 13:20:26.007  WARN 17388 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-24 13:20:26.007  INFO 17388 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-24 13:20:26.343  INFO 17388 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-24 13:20:26.443  INFO 17388 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-03-24 13:20:29.474  INFO 17388 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-03-24 13:20:29.484  INFO 17388 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-03-24 13:20:32.934  INFO 17388 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-03-24 13:20:35.671  INFO 17388 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-03-24 13:20:35.979  INFO 17388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7002 (http) with context path ''
+2021-03-24 13:20:36.179  INFO 17388 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP jpetstore-product 192.168.56.1:7002 register finished
+2021-03-24 13:20:38.979  INFO 17388 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2021-03-24 13:20:38.979  INFO 17388 --- [main] o.m.j.p.JpetstoreProductApplication      : Started JpetstoreProductApplication in 28.824 seconds (JVM running for 32.647)
+2021-03-24 13:20:49.461  INFO 17388 --- [http-nio-7002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-24 13:20:49.462  INFO 17388 --- [http-nio-7002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-24 13:20:49.471  INFO 17388 --- [http-nio-7002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2021-03-24 13:20:49.513  INFO 17388 --- [http-nio-7002-exec-1] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-24 13:23:37.736  INFO 17388 --- [http-nio-7002-exec-10] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-24 15:12:20.847  INFO 17388 --- [http-nio-7002-exec-4] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-24 15:24:04.666  INFO 17388 --- [http-nio-7002-exec-8] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-24 15:26:47.846  INFO 17388 --- [http-nio-7002-exec-5] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-24 15:26:52.097  INFO 17388 --- [http-nio-7002-exec-2] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-24 15:33:48.171  INFO 17388 --- [http-nio-7002-exec-6] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-24 15:33:50.252  INFO 17388 --- [http-nio-7002-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-24 15:33:50.258  WARN 17388 --- [http-nio-7002-exec-9] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-03-24 15:33:50.532  INFO 17388 --- [http-nio-7002-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-24 15:33:50.626  INFO 17388 --- [http-nio-7002-exec-9] o.m.j.p.controller.CatalogController     : 跳往商品大类,Id:FISH
+2021-03-24 15:33:52.210  INFO 17388 --- [http-nio-7002-exec-1] o.m.j.p.controller.CatalogController     : 跳往商品小类,Id:FI-FW-01
+2021-03-24 15:33:57.179  INFO 17388 --- [http-nio-7002-exec-3] o.m.j.p.controller.CatalogController     : 跳往商品小类,Id:FI-FW-01
+2021-03-24 15:33:57.553  INFO 17388 --- [http-nio-7002-exec-8] o.m.j.p.controller.CatalogController     : 跳往商品大类,Id:FISH
+2021-03-24 15:33:57.955  INFO 17388 --- [http-nio-7002-exec-10] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-24 15:34:07.133  INFO 17388 --- [http-nio-7002-exec-7] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-24 15:37:16.075  INFO 6900 --- [main] o.m.j.p.JpetstoreProductApplication      : No active profile set, falling back to default profiles: default
+2021-03-24 15:37:18.230  INFO 6900 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d73c0bf8-fc52-3c7c-a40f-1a1b0f1d57fa
+2021-03-24 15:37:18.446  INFO 6900 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-24 15:37:18.487  INFO 6900 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-24 15:37:19.323  INFO 6900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7002 (http)
+2021-03-24 15:37:19.352  INFO 6900 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-24 15:37:19.352  INFO 6900 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-03-24 15:37:19.815  INFO 6900 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-24 15:37:19.815  INFO 6900 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3685 ms
+2021-03-24 15:37:22.366  WARN 6900 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-24 15:37:22.366  INFO 6900 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-24 15:37:22.366  WARN 6900 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-24 15:37:22.366  INFO 6900 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-24 15:37:22.935  INFO 6900 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-24 15:37:23.161  INFO 6900 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-03-24 15:37:25.929  INFO 6900 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-03-24 15:37:32.389  INFO 6900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7002 (http) with context path ''
+2021-03-24 15:37:32.721  INFO 6900 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP jpetstore-product 192.168.56.1:7002 register finished
+2021-03-24 15:37:34.966  INFO 6900 --- [main] o.m.j.p.JpetstoreProductApplication      : Started JpetstoreProductApplication in 29.436 seconds (JVM running for 34.623)
+2021-03-24 15:37:52.404  INFO 6900 --- [http-nio-7002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-24 15:37:52.405  INFO 6900 --- [http-nio-7002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-24 15:37:52.414  INFO 6900 --- [http-nio-7002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2021-03-24 15:37:52.449  INFO 6900 --- [http-nio-7002-exec-1] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-24 15:38:00.781  INFO 6900 --- [http-nio-7002-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-24 15:38:00.784  WARN 6900 --- [http-nio-7002-exec-2] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-03-24 15:38:01.046  INFO 6900 --- [http-nio-7002-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-24 15:38:01.127  INFO 6900 --- [http-nio-7002-exec-2] o.m.j.p.controller.CatalogController     : 跳往商品大类,Id:FISH
+2021-03-24 15:38:04.473  INFO 6900 --- [http-nio-7002-exec-3] o.m.j.p.controller.CatalogController     : 跳往商品小类,Id:FI-FW-02
+2021-03-24 15:38:09.219  INFO 6900 --- [http-nio-7002-exec-4] o.m.j.p.controller.CatalogController     : 跳往商品小类,Id:FI-FW-02
+2021-03-24 15:38:10.224  INFO 6900 --- [http-nio-7002-exec-5] o.m.j.p.controller.CatalogController     : 跳往某一特定商品,Id:EST-20
+2021-03-24 15:38:12.369  INFO 6900 --- [http-nio-7002-exec-6] o.m.j.p.controller.CatalogController     : 跳往商品小类,Id:FI-FW-02
+2021-03-24 15:38:12.962  INFO 6900 --- [http-nio-7002-exec-8] o.m.j.p.controller.CatalogController     : 跳往商品大类,Id:FISH
+2021-03-24 15:38:13.518  INFO 6900 --- [http-nio-7002-exec-7] o.m.j.p.controller.CatalogController     : 到达主页
+2021-03-24 15:40:38.103  INFO 6900 --- [http-nio-7002-exec-10] o.m.j.p.controller.CatalogController     : 跳往商品大类,Id:REPTILES
+2021-03-24 15:40:39.038  INFO 6900 --- [http-nio-7002-exec-1] o.m.j.p.controller.CatalogController     : 跳往商品小类,Id:RP-LI-02
+2021-03-24 15:40:41.545  INFO 6900 --- [http-nio-7002-exec-2] o.m.j.p.controller.CatalogController     : 跳往商品小类,Id:RP-LI-02
+2021-03-24 15:40:44.510  INFO 6900 --- [http-nio-7002-exec-3] o.m.j.p.controller.CatalogController     : 跳往商品大类,Id:REPTILES
