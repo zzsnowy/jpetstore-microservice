@@ -6,3 +6,5 @@ spring:
   application:
     name: jpetstore-product
 
+  session:
+    store-type: redis

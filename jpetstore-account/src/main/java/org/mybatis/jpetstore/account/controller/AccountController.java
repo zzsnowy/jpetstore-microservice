@@ -95,6 +95,9 @@ public class AccountController {
         categories.add("BIRDS");
         session.setAttribute("categories",categories);
 
+
+        logger.info("sessionId:",session.getId());
+
         return "account/register";
     }
 

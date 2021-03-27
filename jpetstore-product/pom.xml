@@ -21,6 +21,10 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-data-redis</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.mybatis.jpetstore</groupId>
             <artifactId>jpetstore-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>

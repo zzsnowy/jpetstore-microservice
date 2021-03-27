@@ -11,7 +11,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.Enumeration;
 import java.util.List;
 
 @Controller
@@ -47,8 +49,18 @@ public class CatalogController {
 
     // 跳往商品小类
     @GetMapping("/catalog/product")
-    public String viewProduct(@ModelAttribute("productId") String productId, HttpSession session, Model model){
+    public String viewProduct(@ModelAttribute("productId") String productId, HttpServletRequest request, Model model){
 //        logger.debug("log..."); // 输出DEBUG级别的日志
+        HttpSession session = request.getSession();
+        logger.info("websession: {}", request.getSession().getId());
+        Enumeration<String> e = request.getHeaderNames();
+        while (e.hasMoreElements()) {
+            String header = e.nextElement();
+            logger.info("header: {}, {}", header, request.getHeader(header));
+        }
+
+
+
         if(productId != null){
             Product product = catalogService.getProduct(productId);
             List<Item> itemList = catalogService.getItemListByProduct(productId);
@@ -58,6 +70,7 @@ public class CatalogController {
             model.addAttribute("product",product);
         }
         logger.info("跳往商品小类,Id:"+productId);
+        logger.info("shangpin"+session.getId());
         return "catalog/product";
     }
 
