@@ -1,7 +1,7 @@
 package org.mybatis.jpetstore.order.controller;
 
-import org.mybatis.jpetstore.order.domain.Cart;
-import org.mybatis.jpetstore.order.domain.CartItem;
+import org.mybatis.jpetstore.domain.Cart;
+import org.mybatis.jpetstore.domain.CartItem;
 import org.mybatis.jpetstore.domain.Item;
 import org.mybatis.jpetstore.order.feign.CatalogFeignService;
 import org.slf4j.Logger;
@@ -16,15 +16,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 
 import javax.annotation.Resource;
-import javax.servlet.ServletOutputStream;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Collection;
 import java.util.Iterator;
-import java.util.Locale;
 
 @Controller
 public class CartController {
@@ -39,11 +35,10 @@ public class CartController {
 
     // 往购物车加商品
     @GetMapping("/cart/cart")
-    public String addItemToCart(@ModelAttribute("workingItemId") String workingItemId, HttpSession session, Model model) throws IOException {
+    public String addItemToCart(@ModelAttribute("workingItemId") String workingItemId, HttpSession session, Model model){
 
         if(workingItemId != null){
             Cart cart = (Cart) session.getAttribute("cart");
-
 
             // 如果购物车为空
             if(cart == null || cart.getNumberOfItems() == 0){
@@ -60,14 +55,7 @@ public class CartController {
             }
 
             session.setAttribute("cart",cart);
-            Object cart1 =session.getAttribute("cart");
-            logger.info("nnnn"+cart1);
-            logger.info("poponnnn"+cart1.toString());
             model.addAttribute("cart",cart);
-
-            logger.info(session.getId());
-
-
         }
 
         return "cart/cart";

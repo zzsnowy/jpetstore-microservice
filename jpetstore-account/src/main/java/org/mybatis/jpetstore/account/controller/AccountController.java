@@ -1,6 +1,5 @@
 package org.mybatis.jpetstore.account.controller;
 
-import org.mybatis.jpetstore.account.domain.Account;
 import org.mybatis.jpetstore.account.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -9,7 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-
+import org.mybatis.jpetstore.domain.Account;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
@@ -94,9 +93,6 @@ public class AccountController {
         categories.add("CATS");
         categories.add("BIRDS");
         session.setAttribute("categories",categories);
-
-
-        logger.info("sessionId:",session.getId());
 
         return "account/register";
     }

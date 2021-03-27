@@ -1,8 +1,8 @@
 package org.mybatis.jpetstore.order.service.impl;
 
-import org.mybatis.jpetstore.order.domain.Order;
-import org.mybatis.jpetstore.order.domain.Sequence;
 import org.mybatis.jpetstore.domain.Item;
+import org.mybatis.jpetstore.domain.LineItem;
+import org.mybatis.jpetstore.domain.Order;
 import org.mybatis.jpetstore.order.persistence.LineItemMapper;
 import org.mybatis.jpetstore.order.persistence.OrderMapper;
 import org.mybatis.jpetstore.order.persistence.SequenceMapper;
@@ -14,8 +14,6 @@ import org.mybatis.jpetstore.order.persistence.ItemMapper;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import org.mybatis.jpetstore.order.domain.LineItem;
 
 @Service
 public class OrderServiceImpl implements OrderService {

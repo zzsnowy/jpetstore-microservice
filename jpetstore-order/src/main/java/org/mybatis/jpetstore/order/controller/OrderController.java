@@ -1,8 +1,7 @@
 package org.mybatis.jpetstore.order.controller;
 
 import org.mybatis.jpetstore.domain.Account;
-import org.mybatis.jpetstore.order.domain.Cart;
-import org.mybatis.jpetstore.order.domain.Order;
+import org.mybatis.jpetstore.domain.Cart;
 import org.mybatis.jpetstore.order.service.OrderService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

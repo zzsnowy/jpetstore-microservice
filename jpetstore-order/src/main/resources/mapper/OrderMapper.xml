@@ -6,7 +6,7 @@
 
     <cache />
 
-    <select id="getOrder" resultType="org.mybatis.jpetstore.order.domain.Order" parameterType="java.lang.Integer">
+    <select id="getOrder" resultType="org.mybatis.jpetstore.domain.Order" parameterType="java.lang.Integer">
         select
         BILLADDR1 AS billAddress1,
         BILLADDR2 AS billAddress2,
@@ -39,7 +39,7 @@
         AND ORDERS.ORDERID = ORDERSTATUS.ORDERID
     </select>
 
-    <select id="getOrdersByUsername" parameterType="java.lang.String" resultType="org.mybatis.jpetstore.order.domain.Order">
+    <select id="getOrdersByUsername" parameterType="java.lang.String" resultType="org.mybatis.jpetstore.domain.Order">
         SELECT
         BILLADDR1 AS billAddress1,
         BILLADDR2 AS billAddress2,
@@ -73,7 +73,7 @@
         ORDER BY ORDERDATE
     </select>
 
-    <insert id="insertOrder" parameterType="org.mybatis.jpetstore.order.domain.Order">
+    <insert id="insertOrder" parameterType="org.mybatis.jpetstore.domain.Order">
         INSERT INTO ORDERS (ORDERID, USERID, ORDERDATE, SHIPADDR1, SHIPADDR2, SHIPCITY, SHIPSTATE,
         SHIPZIP, SHIPCOUNTRY, BILLADDR1, BILLADDR2, BILLCITY, BILLSTATE, BILLZIP, BILLCOUNTRY,
         COURIER, TOTALPRICE, BILLTOFIRSTNAME, BILLTOLASTNAME, SHIPTOFIRSTNAME, SHIPTOLASTNAME,
@@ -84,7 +84,7 @@
         #{shipToFirstName}, #{shipToLastName}, #{creditCard}, #{expiryDate}, #{cardType}, #{locale})
     </insert>
 
-    <insert id="insertOrderStatus" parameterType="org.mybatis.jpetstore.order.domain.Order">
+    <insert id="insertOrderStatus" parameterType="org.mybatis.jpetstore.domain.Order">
         INSERT INTO ORDERSTATUS (ORDERID, LINENUM, TIMESTAMP, STATUS)
         VALUES (#{orderId,jdbcType=NUMERIC}, #{orderId,jdbcType=NUMERIC}, #{orderDate,jdbcType=TIMESTAMP}, #{status,jdbcType=VARCHAR})
     </insert>

@@ -1,7 +1,6 @@
 package org.mybatis.jpetstore.account.service;
-import org.mybatis.jpetstore.account.domain.Account;
 
-
+import org.mybatis.jpetstore.domain.Account;
 public interface AccountService {
 
     // 根据用户名取得用户，注册的时候用到

@@ -1,7 +1,6 @@
 package org.mybatis.jpetstore.account.persistence;
 import org.apache.ibatis.annotations.Mapper;
-import org.mybatis.jpetstore.account.domain.Account;
-
+import org.mybatis.jpetstore.domain.Account;
 @Mapper
 public interface AccountMapper {
 

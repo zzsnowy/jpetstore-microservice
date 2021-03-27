@@ -1,6 +1,5 @@
 package org.mybatis.jpetstore.order.persistence;
 
-import org.mybatis.jpetstore.order.domain.LineItem;
 import java.util.List;
 
 public interface LineItemMapper {

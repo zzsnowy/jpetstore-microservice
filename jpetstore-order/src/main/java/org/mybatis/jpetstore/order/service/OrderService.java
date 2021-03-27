@@ -1,7 +1,5 @@
 package org.mybatis.jpetstore.order.service;
 
-import org.mybatis.jpetstore.order.domain.Order;
-
 import java.util.List;
 
 public interface OrderService {

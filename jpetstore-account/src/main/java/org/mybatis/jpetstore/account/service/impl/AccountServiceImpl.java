@@ -1,11 +1,10 @@
 package org.mybatis.jpetstore.account.service.impl;
 
-import org.mybatis.jpetstore.account.domain.Account;
 import org.mybatis.jpetstore.account.persistence.AccountMapper;
 import org.mybatis.jpetstore.account.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+import org.mybatis.jpetstore.domain.Account;
 
 @Service
 public class AccountServiceImpl implements AccountService {
