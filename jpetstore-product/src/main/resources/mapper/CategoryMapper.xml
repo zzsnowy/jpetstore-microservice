@@ -6,7 +6,7 @@
 
     <cache />
 
-    <select id="getCategory" parameterType="java.lang.String" resultType="org.mybatis.jpetstore.product.domain.Category">
+    <select id="getCategory" parameterType="java.lang.String" resultType="org.mybatis.jpetstore.domain.Category">
         SELECT
         CATID AS categoryId,
         NAME,
@@ -15,7 +15,7 @@
         WHERE CATID = #{categoryId}
     </select>
 
-    <select id="getCategoryList" resultType="org.mybatis.jpetstore.product.domain.Category">
+    <select id="getCategoryList" resultType="org.mybatis.jpetstore.domain.Category">
         SELECT
         CATID AS categoryId,
         NAME,

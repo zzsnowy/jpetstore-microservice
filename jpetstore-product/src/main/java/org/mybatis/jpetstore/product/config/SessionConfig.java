@@ -16,8 +16,8 @@ public class SessionConfig {
         cookieSerializer.setCookieName("PETSESSION");
         return cookieSerializer;
     }
-    @Bean
-    public RedisSerializer<Object> springSessionDefaultRedisSerializer(){
-        return new GenericJackson2JsonRedisSerializer();
-    }
+//    @Bean
+//    public RedisSerializer<Object> springSessionDefaultRedisSerializer(){
+//        return new GenericJackson2JsonRedisSerializer();
+//    }
 }

@@ -1,7 +1,7 @@
 package org.mybatis.jpetstore.order.persistence;
 
 import java.util.List;
-
+import org.mybatis.jpetstore.domain.Order;
 public interface OrderMapper {
 
     // 根据用户名得到订单

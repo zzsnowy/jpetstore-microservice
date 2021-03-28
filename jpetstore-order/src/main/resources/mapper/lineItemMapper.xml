@@ -6,7 +6,7 @@
 
     <cache />
 
-    <select id="getLineItemsByOrderId" parameterType="java.lang.Integer" resultType="org.mybatis.jpetstore.order.domain.LineItem">
+    <select id="getLineItemsByOrderId" parameterType="java.lang.Integer" resultType="org.mybatis.jpetstore.domain.LineItem">
         SELECT
         ORDERID,
         LINENUM AS lineNumber,
@@ -17,7 +17,7 @@
         WHERE ORDERID = #{orderId}
     </select>
 
-    <insert id="insertLineItem" parameterType="org.mybatis.jpetstore.order.domain.LineItem">
+    <insert id="insertLineItem" parameterType="org.mybatis.jpetstore.domain.LineItem">
         INSERT INTO LINEITEM (ORDERID, LINENUM, ITEMID, QUANTITY, UNITPRICE)
         VALUES (#{orderId}, #{lineNumber}, #{itemId}, #{quantity}, #{unitPrice})
     </insert>

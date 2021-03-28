@@ -10,7 +10,7 @@ import org.mybatis.jpetstore.order.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.mybatis.jpetstore.order.persistence.ItemMapper;
-
+import org.mybatis.jpetstore.domain.Sequence;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

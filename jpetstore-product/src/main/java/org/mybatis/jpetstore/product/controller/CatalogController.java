@@ -1,8 +1,8 @@
 package org.mybatis.jpetstore.product.controller;
 
-import org.mybatis.jpetstore.product.domain.Category;
-import org.mybatis.jpetstore.product.domain.Product;
+import org.mybatis.jpetstore.domain.Category;
 import org.mybatis.jpetstore.domain.Item;
+import org.mybatis.jpetstore.domain.Product;
 import org.mybatis.jpetstore.product.service.CatalogService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -6,13 +6,13 @@
 
     <cache />
 
-    <select id="getSequence" parameterType="org.mybatis.jpetstore.order.domain.Sequence" resultType="org.mybatis.jpetstore.order.domain.Sequence">
+    <select id="getSequence" parameterType="org.mybatis.jpetstore.domain.Sequence" resultType="org.mybatis.jpetstore.domain.Sequence">
         SELECT name, nextid
         FROM SEQUENCE
         WHERE NAME = #{name}
     </select>
 
-    <update id="updateSequence" parameterType="org.mybatis.jpetstore.order.domain.Sequence">
+    <update id="updateSequence" parameterType="org.mybatis.jpetstore.domain.Sequence">
         UPDATE SEQUENCE
         SET NEXTID = #{nextId}
         WHERE NAME = #{name}

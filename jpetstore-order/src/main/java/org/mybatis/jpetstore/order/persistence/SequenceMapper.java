@@ -1,5 +1,5 @@
 package org.mybatis.jpetstore.order.persistence;
-
+import org.mybatis.jpetstore.domain.Sequence;
 public interface SequenceMapper {
 
     // 得到序列

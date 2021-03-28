@@ -1,7 +1,7 @@
 package org.mybatis.jpetstore.order.service;
 
 import java.util.List;
-
+import org.mybatis.jpetstore.domain.Order;
 public interface OrderService {
 
     // 插入订单，生成新订单

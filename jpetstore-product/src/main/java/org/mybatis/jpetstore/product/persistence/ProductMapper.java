@@ -1,9 +1,8 @@
 package org.mybatis.jpetstore.product.persistence;
 
-import org.mybatis.jpetstore.product.domain.Product;
-
 import java.util.List;
 
+import org.mybatis.jpetstore.domain.Product;
 public interface ProductMapper {
 
     // 根据大类categoryId 来查询属于该类的所有Product

@@ -1,8 +1,7 @@
 package org.mybatis.jpetstore.product.persistence;
 
-import org.mybatis.jpetstore.product.domain.Category;
-
 import java.util.List;
+import org.mybatis.jpetstore.domain.Category;
 
 public interface CategoryMapper {
 
